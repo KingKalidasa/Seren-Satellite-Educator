@@ -5,3 +5,6 @@ Uplink, Downlink, and Modulate. Learn about how satellite operations work with t
 Seren is your "out of this world" guide as we learn about Radio Frequencies, Transmission Components, and the logistics of sending data around the world!
 
 This is a work in progress. But will be a graphical adventure exploring these different concepts for interested stargazers everywhere. 
+
+## Requires
+Raylib v5. Not currently included.
