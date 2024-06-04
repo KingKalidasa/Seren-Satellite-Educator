@@ -13,7 +13,7 @@
 int main() {
 	const int screenWidth{ 800 };
 	const int screenHeight{ 600 };
-	auto windowIcon{ LoadImage("icon.png") };
+	auto windowIcon{ LoadImage("resources/icon.png") };
 
 	InitWindow(screenWidth, screenHeight, "Seren Satellite Educator");
 	SetWindowIcon(windowIcon);
