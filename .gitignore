@@ -4,6 +4,7 @@
 # Folders
 !source
 !include
+!resources
 
 # Documentation
 !README.md
@@ -19,3 +20,4 @@
 !*.cpp
 !*.h
 
+!resources/*.png
