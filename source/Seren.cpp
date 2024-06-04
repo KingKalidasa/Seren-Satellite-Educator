@@ -8,8 +8,26 @@
 
 */
 
-#include <iostream>
+#include <raylib.h>
 
 int main() {
-	std::cout << "Hello Seren!" << std::endl;
+	const int screenWidth{ 800 };
+	const int screenHeight{ 600 };
+	auto windowIcon{ LoadImage("icon.png") };
+
+	InitWindow(screenWidth, screenHeight, "Seren Satellite Educator");
+	SetWindowIcon(windowIcon);
+	SetTargetFPS(60);
+	while (!WindowShouldClose()) {
+
+		BeginDrawing();
+		ClearBackground(BLACK);
+
+		DrawText("Hello Seren!", screenWidth / 2 - 80, screenHeight / 2, 28, WHITE);
+		DrawLine(screenWidth / 2 - 100, screenHeight / 2 + 30, screenWidth / 2 + 100, screenHeight / 2 + 30, SKYBLUE);
+		EndDrawing();
+	}
+
+	CloseWindow();
+	UnloadImage(windowIcon);
 }
